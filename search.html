@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<title>Placeholder Search Page</title>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hamilton Homes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Realtors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>Search Page</h1>
+  <div class="container-fluid">
+    <div class="row"> 
+      <form>
+      <button id="Allbtn" type="button" class="btns btn-primary">All</button>
+      <button id="Mountainbtn" type="button" class="btns btn-primary">Mountain</button>
+      <button id="Ancasterbtn" type="button" class="btns btn-primary">Ancaster</button>
+      <button id="Stoney_Creekbtn" type="button" class="btns btn-primary">Stoney Creek</button>
+      <button id="Dundasbtn" type="button" class="btns btn-primary">Dundas</button>
+      <button id="Waterdownbtn" type="button" class="btns btn-primary">Waterdown</button>
+
+      <select name="Number of Bedrooms" id="bedroom" class="form-select">
+        <option selected>Number of Bedrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>       <button id="Number_of_BedroomsBtn" type="button" class="btn btn-primary btn-lg">Filter By Bedroom</button>
+
+      <select name="Number of Bathrooms" id="bathroom" class="form-select">
+        <option selected>Number of Bathrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <button id="Number_of_BathroomsBtn" type="button" class="btn btn-primary btn-lg">Filter By Bathroom</button>
+      <br><br>
+      <label for="min">Minimum Price:</label>
+      <input type="text" id="MinPrice" name="Minimum Price"><br><br>
+      <label for="min">Maximum Price</label>
+      <input type="text" id="MaxPrice" name="Maximum Price"><br><br>
+      <button id="fitlerpricebtn" type="button" class="btn btn-primary btn-lg">Filter By Price</button>
+    </form>
+    </div>
+  </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Address</th>
+          <th scope="col">Postal code</th>
+          <th scope="col">City</th>
+          <th scope="col">Community</th>
+          <th scope="col">Province</th>
+          <th scope="col">Price</th>
+          <th scope="col">Bedrooms</th>
+          <th scope="col">Bathrooms</th>
+          <th scope="col">IMAGE</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody id="tabledataoutputpassed"></tbody>
+    </table>
+
+  <script src="searchdata.js"></script>
+</body>
+</html>

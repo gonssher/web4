@@ -1,0 +1,33 @@
+
+
+  body
+  {
+    background-color:rgb(155, 180, 15);
+  }
+
+#map {
+    height: 600px;
+}
+.container-fluid{
+  display:flex;
+}
+
+#btns
+{
+
+  margin: 5px;
+}
+
+img{
+  height: 75%;
+  width: 100%;
+}
+
+
+#dropbathroom
+{
+
+  width: 250;
+}
+
+
